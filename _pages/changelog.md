@@ -5,61 +5,138 @@ include_in_header: true
 ---
 
 # Changelog
-Here you can keep a changelog for your app. Edit the markdown based CHANGELOG.md which is located in the _pages directory. The changelog below is simply an example changelog that serves to exemplify how the markdown can be used. You can be as creative as you want with the markdown.
+The app is currently in alpha testing on iOS and Android.
+
+This changelog is for the benefit of the testers.
+Once v1.0 of the app is released, the changelog will be reset, showing only post-v1.0 changes.
 
 <br>
 
 ### `Latest`
-# **Version 2.0**
-This is the first update to our app. Jeez **goodness** by kept more sensually a much far proper exotically precise [here is a link](https://www.google.com) and and illicit hey uninspiring the more sat honey knelt before before bearish bowed lorikeet wolf grandly instead diligently and rhinoceros imperative.
+# **Version 0.0.1+16**
+The basic app functionality is all in place. Now we need to get it into the hands of more testers. Thank you so much to taiwegian, our lone, pre-alpha tester!
 
 #### What's New
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+- Now with a 'How it Works' screen, in case you haven't obsessively studied the Pokemon Go Buddy emotional points algorithm. Yes, I realize that this is almost everyone.
+
+<br>
+
+### **Version 0.0.1+15**
+
+#### What's New
+- The longpress explanations on the activity buttons are now split into multiple sections, accessible by swiping.
+
+<br>
+
+### **Version 0.0.1+14**
+
+#### What's New
+- Long-pressing the different activity buttons now provides some information about that activity—what it consists of, where and how to do it, and requirements to actually get the points for it.
+
+<br>
+
+### **Version 0.0.1+13**
 
 #### Bug Fixes
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+- Fix bug with re-re-re-reverted events. It turns out if you do and undo the same event over and over again, the decay timer wasn't behaving correctly. This is now _actually_ fixed.
 
 <br>
 
-### **Version 2.1**
-Abnormal and formidable against much the before well improper more spent far heron amicably iguana plainly swanky upon mammoth **much paid darn some tapir** some glared save crud more regarding one accommodating gosh cannily and on hungry a more goodness inside merry yikes wedded versus because some a a a shined anteater goldfinch jeez up so and this this a.
+### **Version 0.0.1+12**
 
 #### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-
-<br>
-
-________
-<br>
-
-### `Initial Release`
-# **Version 1.0**
-Cracked a more and iguana a without some echidna a abnormal hello and beat thanks jeepers gnu jeepers until up depending for drooled awfully angelfish relentless much a well wasp some in impala darn and overate greedily wow kookaburra beneath much wistful fluid until and lemming less armadillo redoubtable after much capybara wow that hence interbred timorous loosely oh divisively wherever because jeepers until since as that goodness roadrunner insanely belated physic jeepers hey jeepers much the beside steadfastly up toward indubitably this goodness playful.
-
-<br>
-
-## **Version 1.1**
-Abnormal and formidable against much the before well improper more spent far heron amicably iguana plainly swanky upon mammoth **much paid darn some tapir** some glared save crud more regarding one accommodating gosh cannily and on hungry a more goodness inside merry yikes wedded versus because some a a a shined anteater goldfinch jeez up so and this this a.
-
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-
-<br>
-
-## Version 1.0.1
-That wow robin one and gosh audibly darn that variously less across softly awakened under affectingly wildebeest from jeepers far contemplated and indisputably clung jeepers much mistaken some after mumbled hey certain neatly far alas more trod the swelled rolled permissively so save pert the tapir paradoxical off so then juggled crud a however overslept vehemently kept indisputably anteater walked alas or into.
-
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
+- The cooldown period used for bonus, walk, and routes is now 1 minute instead of 10 seconds. This makes it more likely that you'll have time to undo it, in the event that you accidentally registered the wrong event. You can always register a new one by using the 'again' button in the overlay.
 
 #### Bug Fixes
-- Improved user sign up experience.
-- Unlike deliberately zebra hen oh jeez understandable. Alas and quit oh snooty unlike deliberately.
+- You can now revert more than one event, back to back. Previously, if you reverted one event, the decay timer would reset correctly, but if you then went and reverted some other event, the decay timer would start fresh.
 
 <br>
+
+### **Version 0.0.1+11**
+
+#### What's New
+- If you click on an activity button while the cooldown timer is running, you now get an overlay that gives you choices, rather than just reverting the event straight off the bat. People who aren't familiar with the algorithm and the app might click the 'feed' button because they fed their buddy, even when they wouldn't have gotten points for it. This makes sense. I feed my buddy all the time, even when it's not hungry, and I won't get points for it. The point being, we can't know ahead of time if you accidentally clicked the button in the first place, and would like to undo it, or if you clicked it because you did the same action again. The new overlay lets you clarify what you intended.
+- The 'choose' activity has now been renamed to 'kickoff'. The various explanations about the buddy emotional points algorithm on Reddit explain that when you switch to a new buddy for the first time in a given day, you get two extra points, and that if you switch away, you lose those, and can't get them again. But it's a bit more nuanced than that. First of all, if you have the same buddy as yesterday and don't actually choose it, then you still get those points. Or, if you have the same buddy as yesterday, and then switch away, and then switch back and _then_ start feeding it, you also get the points. And you even get the points if you play with your buddy and take a snapshot (thus getting two affection hearts) and _then_ switch away, and switch back and start feeding it. We eventually determined that the two extra points are gained the first time you feed your buddy a berry in a given day. So rather than do something stupidly complicated with the 'feed' action, we decided to rename the action to 'kickoff'. When you start interacting with a new buddy on a given day, click 'kickoff', then when you feed it, click 'feed' as normal. As long as you don't switch away and switch back, you're good.
+
+#### Bug Fixes
+- This fixes a whole slew of bugs related to the fact that an event is not always worth the canonical number of points. If you're nearing the maximum, then an event will only get however many points are left to get to 32, not the full score for that event. The bugs happened when undoing events, and also when deciding whether or not you were allowed to register another bonus.
+
+<br>
+
+### **Version 0.0.1+10**
+
+#### Bug Fixes
+- Make it so the decay timer restarts if you revert an event.
+
+<br>
+
+### **Version 0.0.1+9**
+
+#### What's New
+- If you click an activity button while it's in the cooldown period, it will undo the event. E.g. if you clicked 'gym', and then realized that it wasn't a gym battle, it was a raid. What you want is to undo the 'gym' activity, and pick 'raid' instead.
+- If a timer goes negative it now won't show anything at all, instead of showing a negative timer. While timers don't normally go negative, sometimes there's a bit of lag in the system, and they'll show negative values for a second or two before the timer catches up and refreshes. In this case it's better to just not show anything at all.
+
+<br>
+
+### **Version 0.0.1+8**
+
+#### What's New
+- The events in the detail page now show in reverse order, with the newest events at the top.
+
+#### Bug Fixes
+- The details page can now scroll. /facepalm (Yes, it turns out, sometimes it takes a whole lot of events to get your buddy excited. Who knew.)
+
+<br>
+
+### **Version 0.0.1+7**
+
+#### What's New
+- There's now a new screen that shows the timeline of all the events that you registered with this buddy. When you click 'reset', the timeline starts over.
+
+<br>
+
+### **Version 0.0.1+6**
+
+#### What's New
+- De-emphasizes the 'reset' button even more. We really don't want to make it tempting to press this.
+
+#### Bug Fixes
+- Fixes the logic of the decay timers so that they don't go negative.
+- Deletes the balloon activity. I previously thought that fighting a grunt or a leader in a balloon counted separately from battling at a pokestop. We finally determined that I was wrong. Grunts are grunts. Leaders are leaders. Balloons have no bearing on the issue whatsoever.
+
+<br>
+
+### **Version 0.0.1+5**
+
+#### What's New
+- Show n/32 points in the points tile, instead of just showing the number of points. This is not good design, but it is at least an indicator for those who aren't intimately familiar with the emotional points algorithm of how far they have to go to get their double hearts.
+
+#### Bug Fixes
+- Fixes a bug in the decay timer. If you restarted the app, the decay timer would start at the top, instead of accounting for the time that has passed since your last activity.
+
+### **Version 0.0.1+4**
+
+#### Bug Fixes
+- Makes it so cooldown timers don't go negative.
+
+<br>
+
+### **Version 0.0.1+3**
+
+#### Bug Fixes
+- Fixes the cooldown timers so that they start at the right time when you kill and restart the app.
+
+<br>
+
+### **Version 0.0.1+2**
+
+#### What's New
+- This changes the color of the 'reset' button and moves it from the bottom of the screen to the top. Where previously the 'reset' button was the most obvious button around, this makes it a bit less tempting to press, avoiding accidental resets.
+
+#### Bug Fixes
+- When you background the app and then bring it back to the foreground, the timers now take elapsed time into account, instead of just pretending that the backgrounding never happened and continuing where they left off. It sure is nice to test on a real device!
+
+<br>
+
+### **Version 0.0.1+1**
+This is the very first release of a barely functional app, to a single test user.
