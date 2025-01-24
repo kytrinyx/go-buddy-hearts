@@ -13,7 +13,14 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+16**
+# **Version 0.0.1+17**
+
+#### Bug Fixes
+- Normally you can only register two bonuses. But if you killed the app and restarted it, it would let you register one more. And if you killed it again, yeah... you get the idea. So that's fixed, now.
+
+<br>
+
+### **Version 0.0.1+16**
 The basic app functionality is all in place. Now we need to get it into the hands of more testers. Thank you so much to taiwegian, our lone, pre-alpha tester!
 
 #### What's New
