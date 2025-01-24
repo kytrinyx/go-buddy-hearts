@@ -13,7 +13,12 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+17**
+# **Version 0.0.1+18**
+
+#### Bug Fixes
+- This puts the cooldown timer durations back to where they should be, after temporarily changing them for an experiment and then forgetting to but them back.
+
+### **Version 0.0.1+17**
 
 #### Bug Fixes
 - Normally you can only register two bonuses. But if you killed the app and restarted it, it would let you register one more. And if you killed it again, yeah... you get the idea. So that's fixed, now.
