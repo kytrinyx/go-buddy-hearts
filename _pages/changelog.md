@@ -13,7 +13,15 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+18**
+# **Version 0.0.1+19**
+
+#### What's New
+- When attaining double-hearts (max points), it kills all the running cooldown timers, and doesn't start new ones. The timers are all going to run out before the first bit of decay happens, and until then no more points can be added.
+
+#### Bug Fixes
+- It turns out, hitting 'again' on an activity while it is in cooldown was resetting the cooldown timer. That is now fixed.
+
+### **Version 0.0.1+18**
 
 #### Bug Fixes
 - This puts the cooldown timer durations back to where they should be, after temporarily changing them for an experiment and then forgetting to but them back.
