@@ -13,7 +13,15 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+19**
+# **Version 0.0.1+20**
+
+#### What's New
+
+- We decided not to kill the cooldown timers when attaining double hearts after all. It makes it a bit more confusing, and you can no longer undo an action. What if you accidentally clicked the button that made it go to 32 points? You wouldn't be able to undo that. So yeah. We're reverting to the previous behavior.
+
+<br>
+### **Version 0.0.1+19**
+
 
 #### What's New
 - When attaining double-hearts (max points), it kills all the running cooldown timers, and doesn't start new ones. The timers are all going to run out before the first bit of decay happens, and until then no more points can be added.
@@ -21,6 +29,7 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 #### Bug Fixes
 - It turns out, hitting 'again' on an activity while it is in cooldown was resetting the cooldown timer. That is now fixed.
 
+<br>
 ### **Version 0.0.1+18**
 
 #### Bug Fixes
