@@ -13,9 +13,17 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+21**
+# **Version 0.0.1+22**
 
-No user-facing changes. I tried submitting this for review so we can start external testing, and there was a configuration error that I needed to fix.
+#### What's New
+
+- The behavior of the activity buttons while the timer is at max was still not great: it feels like nothing is happening when you click the button. The button does have a small animation that shows that it is being pushed, but it just didn't feel like that was clear enough feedback. With this change we take a different approach: if you click an available activity, disable the button. Then further interactions will be via the undo-or-again overlay, which should make it feel better.
+
+<br>
+
+### **Version 0.0.1+21**
+
+No user-facing changes. I tried submitting build 20 for review so we can start external testing, and there was a configuration error that I needed to fix.
 
 <br>
 
