@@ -13,7 +13,13 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+23**
+# **Version 0.0.1+24**
+
+#### Bug Fixes
+- So, remember back in v0.0.1+18 where I said that I put the cooldown timers back after accidentally having changed them? It turns out I put them back to the wrong value (mixing up the default decay timer value and the default cooldown timer value). So, yeah. That is fixed f'real this time.
+
+<br>
+### **Version 0.0.1+23**
 
 #### Bug Fixes
 - When you reach max points and click an available action, the button goes gray, and clicking it again gives the choice between 'undo' and 'again'. Again should have been enabled, for 0 points, explaining that it would be a refresh. Instead, it was disabled, saying 'you can't do this again today'. This is now fixed.
