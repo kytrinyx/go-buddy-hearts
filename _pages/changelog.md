@@ -13,7 +13,13 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+20**
+# **Version 0.0.1+21**
+
+No user-facing changes. I tried submitting this for review so we can start external testing, and there was a configuration error that I needed to fix.
+
+<br>
+
+### **Version 0.0.1+20**
 
 #### What's New
 
