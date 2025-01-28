@@ -13,7 +13,25 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+24**
+# **Version 0.0.1+26**
+
+#### What's New
+- We ditched the 'refresh' button next to the decay timer. Now that you can refresh with specific actions via the 'undo' and 'again' overlay, that button was redundant.
+- To prevent old timelines from hanging around, when you open the app it resets the timeline if it hasn't had any activity on it today, provided that it has fully decayed to zero points. This should be inline with the behavior in Pokémon GO, but we may want to verify that.
+
+#### Bug Fixes
+- If you put the app in the background long enough for a bunch of decay to happen, it... just didn't. The decay timer finished, and you would get one point of decay, and it wouldn't start a new timer. It would do the right thing if you killed the app and restarted it, just not if you backgrounded it and then brought it back to the foreground. This is now fixed.
+
+<br>
+
+### **Version 0.0.1+25**
+
+#### Bug Fixes
+- Still fiddling with cooldown timer behavior. This time, if you clicked 'again' on the overlay while at double hearts, the decay timer didn't get reset, and the refresh failed to get added to the timeline shown on the details page.
+
+<br>
+
+### **Version 0.0.1+24**
 
 #### Bug Fixes
 - So, remember back in v0.0.1+18 where I said that I put the cooldown timers back after accidentally having changed them? It turns out I put them back to the wrong value (mixing up the default decay timer value and the default cooldown timer value). So, yeah. That is fixed f'real this time.
@@ -22,14 +40,14 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 ### **Version 0.0.1+23**
 
 #### Bug Fixes
-- When you reach max points and click an available action, the button goes gray, and clicking it again gives the choice between 'undo' and 'again'. Again should have been enabled, for 0 points, explaining that it would be a refresh. Instead, it was disabled, saying 'you can't do this again today'. This is now fixed.
+- We accidentally disabled refreshes entirely while at double-hearts. This is fixed: you get the usual 'undo' and 'again', where 'again' says it will reset the decay timer, but that you don't get points for it.
 
 <br>
 ### **Version 0.0.1+22**
 
 #### What's New
 
-- The behavior of the activity buttons while the timer is at max was still not great: it feels like nothing is happening when you click the button. The button does have a small animation that shows that it is being pushed, but it just didn't feel like that was clear enough feedback. With this change we take a different approach: if you click an available activity, disable the button. Then further interactions will be via the undo-or-again overlay, which should make it feel better.
+- The behavior of the activity buttons while the timer is at max was still not great: it felt like nothing was happening when you clicked the button. The button did have a small animation that showed that it was being pushed, but it just didn't feel like that was clear enough feedback. With this change we take a different approach: if you click an available activity, we disable the button. Then further interactions will be via the undo-or-again overlay, which should make it feel better.
 
 <br>
 
