@@ -13,7 +13,14 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+26**
+# **Version 0.0.1+27**
+
+#### What's New
+
+- Two minutes before decay happens, you'll get a notification about decay being imminent.
+
+<br>
+### **Version 0.0.1+26**
 
 #### What's New
 - We ditched the 'refresh' button next to the decay timer. Now that you can refresh with specific actions via the 'undo' and 'again' overlay, that button was redundant.
