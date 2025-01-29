@@ -13,7 +13,15 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+27**
+# **Version 0.0.1+28**
+
+
+#### Bug Fixes
+- Actually trigger that notification that should have gone out in the previous build.
+
+<br>
+
+### **Version 0.0.1+27**
 
 #### What's New
 
