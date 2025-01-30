@@ -13,8 +13,13 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+28**
+# **Version 0.0.1+29**
 
+#### Bug Fixes
+- Sometimes the decay timer was observed to be flip-flopping between an old countdown and a new countdown. This should no longer happen.
+
+<br>
+### **Version 0.0.1+28**
 
 #### Bug Fixes
 - Actually trigger that notification that should have gone out in the previous build.
