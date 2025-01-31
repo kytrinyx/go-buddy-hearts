@@ -16,6 +16,12 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 # **Version 0.0.1+29**
 
 #### Bug Fixes
+- Okay. That flip-flopping was not fixed. I have still not been able to prove what is causing it, but I have another hypothesis. If I'm right, it will not continue to happen. (I'm not confident. Can you tell?)
+
+<br>
+### **Version 0.0.1+29**
+
+#### Bug Fixes
 - Sometimes the decay timer was observed to be flip-flopping between an old countdown and a new countdown. This should no longer happen.
 
 <br>
