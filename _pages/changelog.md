@@ -13,7 +13,17 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+29**
+# **Version 0.0.1+31**
+
+#### What's new
+
+_Note that the notifications are still not working on Android. I'm working on figuring out why, but have no estimate as to when this will be fixed._
+
+- We decided to change the decay notification so that it happens 3 minutes before decay, instead of 2 minutes. The game boots up pretty slowly, so if you get a 2 minute warning and then have to boot the game up from scratch, it can get a bit stressful.
+
+
+<br>
+### **Version 0.0.1+30**
 
 #### Bug Fixes
 - Okay. That flip-flopping was not fixed. I have still not been able to prove what is causing it, but I have another hypothesis. If I'm right, it will not continue to happen. (I'm not confident. Can you tell?)
