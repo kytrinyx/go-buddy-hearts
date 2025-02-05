@@ -13,9 +13,16 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+32**
+# **Version 0.0.1+33**
 
-### Bug Fixes
+#### Bug Fixes
+- When the cooldown timer got to zero it would just stay there. Also, if you backgrounded the app and then brought it back to the foreground after the cooldown timer finished, it would just stay stuck at the value that it had been when you backgrounded it. This is now fixed.
+
+<br>
+
+### **Version 0.0.1+32**
+
+#### Bug Fixes
 
 - When you are at double-hearts, the buttons should visibly deactivate when you push them. That was working, but the very last button that you pushed to _reach_ double-hearts was also being deactivated. This is now fixed.
 - When you have been at double-hearts and then lose one or more points to inactivity, any deactivated buttons should reactivate. This was working if the app was open, but if you killed the app and opened it, then those buttons were not reactivating. This is now fixed.
