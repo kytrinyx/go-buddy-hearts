@@ -13,7 +13,13 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+33**
+# **Version 0.0.1+34**
+#### Bug Fixes
+- When rebooting the app the decay registration code was being run twice. I think I've got that sorted now.
+- I still haven't been able to prove what is causing the occasional flickering in the decay timer, but I found one thing that might be contributing and fixed it. We'll see.
+
+<br>
+### **Version 0.0.1+33**
 
 #### Bug Fixes
 - When the cooldown timer got to zero it would just stay there. Also, if you backgrounded the app and then brought it back to the foreground after the cooldown timer finished, it would just stay stuck at the value that it had been when you backgrounded it. This is now fixed.
