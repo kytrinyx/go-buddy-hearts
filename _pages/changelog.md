@@ -13,7 +13,13 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+34**
+# **Version 0.0.1+35**
+
+#### Bug Fixes
+- If the app for some reason managed to decay past 0 points, it would keep decaying and decaying and decaying. Embarrassing. This should no longer happen.
+
+<br>
+### **Version 0.0.1+34**
 #### Bug Fixes
 - When rebooting the app the decay registration code was being run twice. I think I've got that sorted now.
 - I still haven't been able to prove what is causing the occasional flickering in the decay timer, but I found one thing that might be contributing and fixed it. We'll see.
