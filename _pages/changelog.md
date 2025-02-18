@@ -13,7 +13,15 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+36**
+# **Version 0.0.1+37**
+
+#### Bug Fixes
+- Fix color of 'time to decay' label.
+- Kill decay timer when resetting the timeline.
+
+<br>
+
+### **Version 0.0.1+36**
 
 #### Bug Fixes
 - After resetting, you would still get a notification about upcoming decay for the previous session. This cancels the pending notification.
