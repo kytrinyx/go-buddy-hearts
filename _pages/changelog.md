@@ -13,7 +13,15 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+35**
+# **Version 0.0.1+36**
+
+#### Bug Fixes
+- After resetting, you would still get a notification about upcoming decay for the previous session. This cancels the pending notification.
+- The double-decay bug was still rearing it's ugly head... every once in a while when decay happened in the background it would get registered twice. I've now fixed another reason why this could happen.
+- I've made yet another attempt at fixing the flickering decay timer. I'm not confident about this one, though, since I don't actually understand why it was flickering in the first place.
+
+<br>
+### **Version 0.0.1+35**
 
 #### Bug Fixes
 - If the app for some reason managed to decay past 0 points, it would keep decaying and decaying and decaying. Embarrassing. This should no longer happen.
