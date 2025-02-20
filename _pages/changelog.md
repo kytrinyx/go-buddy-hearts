@@ -13,7 +13,14 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+37**
+# **Version 0.0.1+38**
+
+#### Bug Fixes
+- Show 0 points if the timeline went negative. This shouldn't happen, but we still have the double-decay bug, so it does.
+- Don't show decay timer if it is in the past. I rewrote the timer the other day, and didn't have an automated test to cover this case, so it slipped through the cracks.
+
+<br>
+### **Version 0.0.1+37**
 
 #### Bug Fixes
 - Fix color of 'time to decay' label.
