@@ -13,7 +13,16 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+38**
+# **Version 0.0.1+39**
+
+#### Bug Fixes
+- I am testing another hypothesis about the double decay. My current guess is that when you wake the app up after a decay timer has reached it's end, two different paths trigger the decay computation. The first is the service that calculates decay when the app wakes up after being killed or being backgrounded. The second is a call that gets triggered when the decay timer finishes counting down.
+
+The simulator that I work on doesn't behave the same way as the actual phones do, so I haven't been able to confirm the hypothesis yet. I'm working on a logging/debugging feature that I'll deploy if this doesn't work, so we can make better observations.
+
+<br>
+
+### **Version 0.0.1+38**
 
 #### Bug Fixes
 - Show 0 points if the timeline went negative. This shouldn't happen, but we still have the double-decay bug, so it does.
