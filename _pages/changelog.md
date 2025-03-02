@@ -13,7 +13,15 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+39**
+# **Version 0.0.1+40**
+#### What's New
+- Added a debugging log so we can figure out what's going on when decay doesn't get triggered, or daily reset doesn't happen.
+
+#### Bug Fixes
+- Always run decay checking when app boots up. The app is supposed to listen for a signal in order to run the computation, but when booting up the app, the signal often gets sent before the app starts listening for it. Sigh.
+
+<br>
+### **Version 0.0.1+39**
 
 #### Bug Fixes
 - I am testing another hypothesis about the double decay. My current guess is that when you wake the app up after a decay timer has reached it's end, two different paths trigger the decay computation. The first is the service that calculates decay when the app wakes up after being killed or being backgrounded. The second is a call that gets triggered when the decay timer finishes counting down.
