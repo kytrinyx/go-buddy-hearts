@@ -13,7 +13,15 @@ Once v1.0 of the app is released, the changelog will be reset, showing only post
 <br>
 
 ### `Latest`
-# **Version 0.0.1+40**
+# **Version 0.0.1+41**
+
+#### What's New
+- The help screen is gone; I'm going to do proper design and we won't need it.
+- We now have Settings! You can decide whether or not you want to be notified about upcoming decay. Probably you do. So this isn't actually all that exciting, except that it's a prerequisite for adding notification for cooldown timers finishing because you definitely won't want those to go off automatically. So, yeah. Settings.
+
+<br>
+
+### **Version 0.0.1+40**
 #### What's New
 - Added a debugging log so we can figure out what's going on when decay doesn't get triggered, or daily reset doesn't happen.
 
